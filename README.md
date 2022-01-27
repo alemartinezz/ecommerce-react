@@ -1,3 +1,3 @@
-# Primera App React para el curso React de CoderHouse
+# Primera App para el curso React de CoderHouse
 
 😈 🤑 🥵
