@@ -1,4 +1,4 @@
-# App para el curso React de CoderHouse
+# App para el curso [React de CoderHouse](https://www.coderhouse.com.uy/online/reactjs)
 
 ### Todas las clases van a tener su rama diferente, partiendo de la clase (rama) anterior:
 
