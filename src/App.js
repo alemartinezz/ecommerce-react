@@ -1,13 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Title from './components/Title/Title'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Title />
+      <ItemListContainer greeting="Hola Mundo!" additionalMessage="Clase 3: Components"/>
     </div>
   );
 }
