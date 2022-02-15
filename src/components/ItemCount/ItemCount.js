@@ -17,7 +17,7 @@ const ItemCount = () => {
         <div className='grid w-96 m-auto mt-8'>
             <div className='bg-slate-200 p-4'>
                 <h2 className='text-left'>ItemListContainer</h2>
-                <div className='flex justify-between bg-white mt-2 font-semibold text-2xl bold px-4 text-lg border border-zinc-700 rounded-lg content-center h-10'>
+                <div className='flex justify-between bg-white mt-2 font-semibold text-2xl bold px-4 text-lg border border-zinc-700 rounded-lg items-center h-10'>
                     <button className="text-3xl text-sky-700" onClick={decrement}>-</button>
                     <span>{count}</span>
                     <button className="text-3xl text-sky-700" onClick={increment}>+</button>
