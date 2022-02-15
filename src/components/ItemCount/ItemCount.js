@@ -23,7 +23,7 @@ const ItemCount = () => {
                     <button className="text-3xl text-sky-700" onClick={increment}>+</button>
                 </div>
             </div>
-            <button className='p-2 my-2 h-10 hover:bg-slate-200 bg-white text-sky-600 border border-sky-600 rounded-lg'>Agregar al carrito</button>
+            <button className='p-2 m-4 h-10 hover:bg-slate-200 bg-white text-sky-600 border border-sky-600 rounded-lg'>Agregar al carrito</button>
         </div>
 
     );
