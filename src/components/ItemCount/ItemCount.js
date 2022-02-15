@@ -1,5 +1,5 @@
 
-import { useState }  from 'react';
+import { useState } from 'react';
 
 const ItemCount = () => {
 
@@ -13,28 +13,20 @@ const ItemCount = () => {
         setCount(count + 1)
     };
 
-    <div className="text-center p-20">
-        <div className="productContainer">
-            <div>
-                <div className='flex space-between'>
-                    <Button
-                        className="mx-10 px-10"
-                        onClick={increment}
-                    >
-                        +
-                    </Button>
-                    <div id="ItemQuantity"></div>
-                    <Button
-                        className="mx-20 px-10"
-                        onClick={decrement}
-                    >
-                        -
-                    </Button>
+    return (
+        <div className='grid w-96 m-auto mt-8'>
+            <div className='bg-slate-200 p-4'>
+                <h2 className='text-left'>ItemListContainer</h2>
+                <div className='flex justify-between bg-white mt-2 font-semibold text-2xl bold px-4 text-lg border border-zinc-700 rounded-lg content-center h-10'>
+                    <button className="text-3xl text-sky-700" onClick={decrement}>-</button>
+                    <span>{count}</span>
+                    <button className="text-3xl text-sky-700" onClick={increment}>+</button>
                 </div>
             </div>
-            <button id="addToCart"> Agregar al carrito </button>
+            <button className='p-2 my-2 h-10 hover:bg-slate-200 bg-white text-sky-600 border border-sky-600 rounded-lg'>Agregar al carrito</button>
         </div>
-    </div>
+
+    );
 };
 
 export default ItemCount;
