@@ -1,17 +1,35 @@
 
 import { useState } from 'react';
 
-const ItemCount = () => {
+const ItemCount = ({stock, initial}) => {
 
-    const [count, setCount] = useState(0);
+    // Set initial count according to props
+    const [count, setCount] = useState(initial);
 
-    const decrement = () => {
-        setCount(count - 1)
-    };
+    // Set initial stock
+    const [currentStock, setStock] = useState(stock - initial);
+
+    console.log("Stock: " + currentStock)
+    console.log("Count: " + count)
+    console.log("-----------")
 
     const increment = () => {
-        setCount(count + 1)
+        if (currentStock > 0){
+            setCount(count + 1)
+            setStock(currentStock - 1)
+        }
     };
+
+    const decrement = () => {
+        if (count > 0) {
+            setCount(count - 1)
+            setStock(currentStock + 1)
+        }
+    };
+
+    const onAdd = () => {
+
+    }
 
     return (
         <div className='grid w-96 m-auto mt-8'>
@@ -23,9 +41,11 @@ const ItemCount = () => {
                     <button className="text-3xl text-sky-700" onClick={increment}>+</button>
                 </div>
             </div>
-            <button className='p-2 m-4 h-10 hover:bg-slate-200 bg-white text-sky-600 border border-sky-600 rounded-lg'>Agregar al carrito</button>
-        </div>
+            <button className='p-2 m-4 h-10 hover:bg-slate-200 bg-white text-sky-600 border border-sky-600 rounded-lg' onClick={onAdd}>Agregar al carrito</button>
 
+            <p className='p-2 m-4 text-xl'>Ha seleccionado: {count} elementos.</p>
+
+        </div>
     );
 };
 

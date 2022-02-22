@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <ItemListContainer greeting="E-commerce React" additionalMessage="By: Alejandro Martínez"/>
-      <ItemCount />
+      <ItemCount stock={5} initial={1}/>
     </div>
   );
 }
