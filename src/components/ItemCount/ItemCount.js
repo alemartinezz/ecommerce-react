@@ -9,10 +9,6 @@ const ItemCount = ({stock, initial}) => {
     // Set initial stock
     const [currentStock, setStock] = useState(stock - initial);
 
-    console.log("Stock: " + currentStock)
-    console.log("Count: " + count)
-    console.log("-----------")
-
     const increment = () => {
         if (currentStock > 0){
             setCount(count + 1)
